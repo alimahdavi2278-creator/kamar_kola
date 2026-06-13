@@ -1,7 +1,59 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=
+        "viewport" content="width=device-width, initial-scale=1.0">
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+@media (max-width:768px){
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:16px;
+    }
+
+    .gallery{
+        grid-template-columns:1fr;
+    }
+
+    .martyr-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .martyr-card img{
+        width:100%;
+        max-width:300px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:10px;
+    }
+}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>کمرکلا | نگین طبیعت بکر در چهاردانگه</title>
