@@ -8,40 +8,24 @@
 <title>روستای کمرکلا | نگین طبیعت بکر در چهاردانگه</title>
 
 <style>
-.menu-btn{
-.menu-btn{
-display:none;
-background:#d4af37;
-color:#ffffff;
-font-size:34px;
-font-weight:bold;
-text-align:center;
-padding:12px;
-cursor:pointer;
-position:sticky;
-top:0;
-z-index:1001;
-box-shadow:0 3px 10px rgba(0,0,0,.25);
-border-bottom:2px solid #b8860b;
-}
-#navbar a{
-padding:12px;
-margin:0;
-border-bottom:1px solid rgba(255,255,255,.15);
-}
 
-}
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
+}
 
 body{
 font-family:Tahoma,sans-serif;
 background:#f5f5f5;
 color:#222;
 line-height:1.9;
+}
+
+img{
+max-width:100%;
+display:block;
 }
 
 .hero{
@@ -67,72 +51,141 @@ margin-bottom:15px;
 font-size:24px;
 }
 
-
-  <nav id="navbar">
-
-<a href="#about">معرفی روستا</a>
-<a href="#history">تاریخچه</a>
-<a href="#attractions">جاذبه‌ها</a>
-<a href="#misi">جنگل می‌سی</a>
-<a href="#imamzadeh">امامزاده مهدی</a>
-<a href="#martyr">شهید روستا</a>
-<a href="#gallery">گالری تصاویر</a>
-<a href="#map">نقشه</a>
-<a href="#contact">تماس با ما</a>
-
-</nav>
 nav{
-    background:#0f3f28;
-    position:sticky;
-    top:0;
-    z-index:1000;
-
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:10px;
-
-    padding:12px;
+background:#0f3f28;
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:10px;
+padding:12px;
 }
 
 nav a{
-    color:#ffffff;
-    text-decoration:none;
-    padding:8px 12px;
-    font-weight:bold;
-    border-radius:8px;
-    transition:.3s;
+color:white;
+text-decoration:none;
+padding:10px 15px;
+border-radius:8px;
+font-weight:bold;
+transition:.3s;
 }
 
 nav a:hover{
-    background:#d4af37;
-    color:#0f3f28;
+background:#d4af37;
+color:#0f3f28;
 }
 
-@media (max-width:768px){
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
 
-    nav{
-        background:#0f3f28;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:5px;
-    }
+.card{
+background:white;
+padding:30px;
+margin:25px 0;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+}
 
-    nav a{
-        width:100%;
-        text-align:center;
-        background:#0f3f28;
-        color:white;
-        padding:12px;
-        border-bottom:1px solid rgba(255,255,255,.15);
-    }
+h2{
+color:#0f3f28;
+margin-bottom:20px;
+border-right:5px solid #d4af37;
+padding-right:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:15px;
+}
+
+.item{
+background:#eef6ef;
+padding:15px;
+border-radius:10px;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,.15);
+transition:.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+.martyr-card{
+display:flex;
+gap:30px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.martyr-card img{
+width:300px;
+border-radius:15px;
+}
+
+.map-btn,
+.instagram-btn{
+display:inline-block;
+padding:12px 24px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+margin-top:10px;
+}
+
+.map-btn{
+background:#0f3f28;
+}
+
+.instagram-btn{
+background:#c13584;
+}
+
+footer{
+background:#0f3f28;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
 }
 
 nav{
-display:flex;
 flex-direction:column;
-gap:10px;
+align-items:center;
+}
+
+nav a{
+width:100%;
+text-align:center;
 }
 
 .gallery-grid{
@@ -154,46 +207,46 @@ max-width:320px;
 </style>
 
 </head>
-  <body>
+
+<body>
 
 <section class="hero">
-    <div>
-        <h1>روستای کمرکلا</h1>
-        <p>کمرکلا، نگین طبیعت بکر در چهاردانگه</p>
-    </div>
+<div>
+<h1>روستای کمرکلا</h1>
+<p>کمرکلا، نگین طبیعت بکر در چهاردانگه</p>
+</div>
 </section>
 
 <nav>
-    <a href="#about">معرفی روستا</a>
-    <a href="#history">تاریخچه</a>
-    <a href="#attractions">جاذبه‌ها</a>
-    <a href="#misi">جنگل می‌سی</a>
-    <a href="#imamzadeh">امامزاده مهدی</a>
-    <a href="#martyr">شهید روستا</a>
-    <a href="#gallery">گالری تصاویر</a>
-    <a href="#map">نقشه</a>
-    <a href="#contact">تماس با ما</a>
+<a href="#about">معرفی روستا</a>
+<a href="#history">تاریخچه</a>
+<a href="#attractions">جاذبه‌ها</a>
+<a href="#misi">جنگل می‌سی</a>
+<a href="#imamzadeh">امامزاده مهدی</a>
+<a href="#martyr">شهید روستا</a>
+<a href="#gallery">گالری تصاویر</a>
+<a href="#map">نقشه</a>
+<a href="#contact">تماس با ما</a>
 </nav>
 
 <div class="container">
-
-<section class="card" id="about">
+  <section class="card" id="about">
 
 <h2>معرفی روستا</h2>
 
 <p>
-روستای کمرکلا در حدود ۱۰۰ کیلومتری جنوب شهرستان ساری، در دهستان نرماب‌دوسر
-و بخش چهاردانگه استان مازندران قرار دارد.
+روستای کمرکلا در حدود ۱۰۰ کیلومتری جنوب شهرستان ساری و در بخش چهاردانگه
+استان مازندران واقع شده است.
 </p>
 
 <p>
-این روستا با روستاهای سعیدآباد و ذکریاکلا همسایه بوده و در ارتفاع حدود
-۹۱۵ متری از سطح دریا واقع شده است.
+این روستا در دهستان نرماب‌دوسر قرار دارد و با روستاهای سعیدآباد و
+ذکریاکلا همسایه است.
 </p>
 
 <p>
-کمرکلا با طبیعتی بکر، جنگل‌های سرسبز، چشمه‌های زلال و آب‌وهوای معتدل،
-یکی از مناطق زیبای چهاردانگه به شمار می‌آید.
+کمرکلا با طبیعتی بکر، جنگل‌های سرسبز، چشمه‌های زلال، کوهستان‌های زیبا
+و آب‌وهوای مطبوع، یکی از مناطق ارزشمند و دیدنی چهاردانگه محسوب می‌شود.
 </p>
 
 <p>
@@ -210,33 +263,33 @@ max-width:320px;
 <div class="grid">
 
 <div class="item">
-<strong>جمعیت:</strong><br>
+<strong>جمعیت</strong><br>
 حدود ۱۰۰ نفر
 </div>
 
 <div class="item">
-<strong>تعداد خانوار:</strong><br>
-۲۵ خانوار
+<strong>تعداد خانوار</strong><br>
+حدود ۲۵ خانوار
 </div>
 
 <div class="item">
-<strong>ارتفاع از سطح دریا:</strong><br>
-حدود ۹۱۵ متر
-</div>
-
-<div class="item">
-<strong>زبان محلی:</strong><br>
+<strong>زبان محلی</strong><br>
 مازنی (طبری)
 </div>
 
 <div class="item">
-<strong>اقتصاد:</strong><br>
+<strong>اقتصاد روستا</strong><br>
 کشاورزی و دامداری
 </div>
 
 <div class="item">
-<strong>ویژگی شاخص:</strong><br>
-طبیعت بکر و زیبا
+<strong>ارتفاع از سطح دریا</strong><br>
+حدود ۹۱۵ متر
+</div>
+
+<div class="item">
+<strong>ویژگی شاخص</strong><br>
+طبیعت بکر و جنگل‌های سرسبز
 </div>
 
 </div>
@@ -248,113 +301,141 @@ max-width:320px;
 <h2>تاریخچه روستا</h2>
 
 <p>
-بر اساس آثار تاریخی باقی‌مانده از قلعه تاریخی روستای کمرکلا،
+بر اساس آثار تاریخی به‌جامانده از قلعه تاریخی روستای کمرکلا،
 قدمت این منطقه به حدود ۳۰۰ سال پیش از میلاد مسیح می‌رسد.
 </p>
 
 <p>
-وجود بقایای قلعه تاریخی متعلق به دوره اشکانیان نشان می‌دهد که
-این منطقه از گذشته‌های دور محل سکونت و زندگی بوده است.
+بقایای قلعه تاریخی موجود در روستا که متعلق به دوره اشکانیان است،
+نشان‌دهنده پیشینه کهن و اهمیت تاریخی این منطقه در گذشته است.
 </p>
 
 <p>
-نام «کمرکلا» به معنای «آبادی واقع در دامنه کوه» است و این نام
-به موقعیت جغرافیایی روستا اشاره دارد.
+نام «کمرکلا» از دو واژه «کمر» و «کلا» تشکیل شده و به معنای
+«آبادی واقع در دامنه کوه» است؛ نامی که به‌خوبی موقعیت جغرافیایی
+این روستا را توصیف می‌کند.
+</p>
+
+<p>
+امروزه کمرکلا با حفظ هویت فرهنگی و تاریخی خود، همچنان یکی از
+روستاهای زیبا و اصیل منطقه چهاردانگه به شمار می‌رود.
 </p>
 
 </section>
-  <section class="card" id="attractions">
+<section class="card" id="about">
 
-<h2>جاذبه‌های گردشگری</h2>
+<h2>معرفی روستا</h2>
 
-<ul>
+<p>
+روستای کمرکلا در حدود ۱۰۰ کیلومتری جنوب شهرستان ساری و در بخش چهاردانگه
+استان مازندران واقع شده است.
+</p>
 
-<li>جنگل می‌سی</li>
-<li>جنگل سرکله</li>
-<li>خانه‌سرمال</li>
-<li>پِچَم</li>
-<li>چشمه قال‌قال</li>
-<li>چشمه می‌سی‌دره</li>
-<li>گرموک</li>
-<li>رودخانه سفیدرود</li>
-<li>قلعه تاریخی کمرکلا</li>
-<li>امامزاده مهدی (ع)</li>
-<li>خانه‌باغ مهدوی</li>
-<li>آبشار زیارت‌دره</li>
-<li>آبشار می‌سی‌دره</li>
+<p>
+این روستا در دهستان نرماب‌دوسر قرار دارد و با روستاهای سعیدآباد و
+ذکریاکلا همسایه است.
+</p>
 
-</ul>
+<p>
+کمرکلا با طبیعتی بکر، جنگل‌های سرسبز، چشمه‌های زلال، کوهستان‌های زیبا
+و آب‌وهوای مطبوع، یکی از مناطق ارزشمند و دیدنی چهاردانگه محسوب می‌شود.
+</p>
+
+<p>
+مردم روستا به زبان مازنی (طبری) سخن می‌گویند و عمده فعالیت اقتصادی آنان
+بر پایه کشاورزی و دامداری است.
+</p>
 
 </section>
 
-<section class="card" id="misi">
+<section class="card">
 
-<h2>🌲 جنگل می‌سی</h2>
+<h2>اطلاعات روستا</h2>
 
-<p>
-جنگل می‌سی یکی از زیباترین و بکرترین مناطق طبیعی روستای کمرکلا است.
-این جنگل با پوشش انبوه درختان، هوای پاک، چشمه‌های طبیعی و چشم‌اندازهای
-کوهستانی، مقصدی محبوب برای طبیعت‌گردان و علاقه‌مندان به محیط زیست محسوب می‌شود.
-</p>
+<div class="grid">
 
-<p>
-در فصل بهار و تابستان سرسبزی چشم‌نواز جنگل و در پاییز رنگ‌آمیزی زیبای
-درختان، جلوه‌ای کم‌نظیر به این منطقه می‌بخشد.
-</p>
+<div class="item">
+<strong>جمعیت</strong><br>
+حدود ۱۰۰ نفر
+</div>
 
-<div class="gallery-grid">
+<div class="item">
+<strong>تعداد خانوار</strong><br>
+حدود ۲۵ خانوار
+</div>
 
-<img src="images/1781349542331.jpg" alt="جنگل می‌سی">
+<div class="item">
+<strong>زبان محلی</strong><br>
+مازنی (طبری)
+</div>
 
-<img src="images/1781349542320.jpg" alt="جنگل می‌سی">
+<div class="item">
+<strong>اقتصاد روستا</strong><br>
+کشاورزی و دامداری
+</div>
 
-<img src="images/1781349542307.jpg" alt="جنگل می‌سی">
+<div class="item">
+<strong>ارتفاع از سطح دریا</strong><br>
+حدود ۹۱۵ متر
+</div>
 
-<img src="images/1781349542342.jpg" alt="جنگل می‌سی">
+<div class="item">
+<strong>ویژگی شاخص</strong><br>
+طبیعت بکر و جنگل‌های سرسبز
+</div>
 
 </div>
 
-<br>
+</section>
 
-<h3>ویژگی‌های جنگل می‌سی</h3>
+<section class="card" id="history">
 
-<ul>
+<h2>تاریخچه روستا</h2>
 
-<li>پوشش جنگلی متراکم و بکر</li>
+<p>
+بر اساس آثار تاریخی به‌جامانده از قلعه تاریخی روستای کمرکلا،
+قدمت این منطقه به حدود ۳۰۰ سال پیش از میلاد مسیح می‌رسد.
+</p>
 
-<li>هوای پاک و دل‌انگیز</li>
+<p>
+بقایای قلعه تاریخی موجود در روستا که متعلق به دوره اشکانیان است،
+نشان‌دهنده پیشینه کهن و اهمیت تاریخی این منطقه در گذشته است.
+</p>
 
-<li>مناسب برای طبیعت‌گردی و پیاده‌روی</li>
+<p>
+نام «کمرکلا» از دو واژه «کمر» و «کلا» تشکیل شده و به معنای
+«آبادی واقع در دامنه کوه» است؛ نامی که به‌خوبی موقعیت جغرافیایی
+این روستا را توصیف می‌کند.
+</p>
 
-<li>چشم‌اندازهای کوهستانی زیبا</li>
-
-<li>تنوع گیاهی و جانوری منطقه</li>
-
-<li>محیطی آرام برای گردش و استراحت</li>
-
-</ul>
+<p>
+امروزه کمرکلا با حفظ هویت فرهنگی و تاریخی خود، همچنان یکی از
+روستاهای زیبا و اصیل منطقه چهاردانگه به شمار می‌رود.
+</p>
 
 </section>
-  <section class="card" id="imamzadeh">
+<section class="card" id="imamzadeh">
 
 <h2>🕌 امامزاده مهدی (ع)</h2>
 
 <p>
-امامزاده مهدی (ع) یکی از مهم‌ترین اماکن مذهبی روستای کمرکلا است که
-در محیطی سرسبز و آرام قرار گرفته و هر ساله پذیرای زائران و گردشگران
-فراوانی از مناطق مختلف استان مازندران است.
+امامزاده مهدی (ع) یکی از مهم‌ترین اماکن مذهبی و معنوی روستای کمرکلا است.
+این مکان مقدس در میان طبیعت زیبای منطقه قرار گرفته و سالانه پذیرای
+زائران، گردشگران و علاقه‌مندان به اماکن مذهبی از نقاط مختلف استان مازندران است.
 </p>
 
 <p>
-قرار گرفتن این مکان مقدس در دل طبیعت زیبای منطقه، جلوه‌ای معنوی و
-دلنشین به آن بخشیده است.
+فضای آرام، طبیعت سرسبز اطراف و موقعیت مناسب این امامزاده،
+آن را به یکی از شاخص‌ترین جاذبه‌های مذهبی روستا تبدیل کرده است.
 </p>
 
 <div class="gallery-grid">
 
-<img src="images/1781348469865.jpg" alt="امامزاده مهدی">
+<img src="images/IMG_20260328_142531.jpg"
+alt="امامزاده مهدی روستای کمرکلا">
 
-<img src="images/1781348492465.jpg" alt="امامزاده مهدی">
+<img src="images/IMG_20260329_115239.jpg"
+alt="امامزاده مهدی روستای کمرکلا">
 
 </div>
 
@@ -373,18 +454,18 @@ alt="شهید سیدمهدی موسوی کمرکلایی">
 
 <p>
 شهید سیدمهدی موسوی کمرکلایی از فرزندان پرافتخار روستای کمرکلا است که
-در راه دفاع از میهن اسلامی و ارزش‌های والای انقلاب اسلامی به
-درجه رفیع شهادت نائل آمد.
+در راه دفاع از میهن اسلامی، ارزش‌های دینی و آرمان‌های انقلاب اسلامی
+به درجه رفیع شهادت نائل آمد.
 </p>
 
 <p>
-نام و یاد این شهید والامقام همواره در قلب مردم روستا زنده است و
-مردم کمرکلا با افتخار یاد و خاطره ایشان را گرامی می‌دارند.
+نام و یاد این شهید بزرگوار همواره در قلب مردم روستا زنده است و
+اهالی کمرکلا با افتخار از ایشان به عنوان یکی از مفاخر روستا یاد می‌کنند.
 </p>
 
 <p>
-شهدا چراغ راه نسل‌های آینده هستند و فرهنگ ایثار و فداکاری آنان
-برای همیشه در تاریخ این سرزمین ماندگار خواهد بود.
+فرهنگ ایثار، مقاومت و فداکاری شهدا سرمایه‌ای ارزشمند برای نسل‌های آینده
+محسوب می‌شود و یاد و خاطره آنان همواره گرامی خواهد ماند.
 </p>
 
 </div>
@@ -392,7 +473,7 @@ alt="شهید سیدمهدی موسوی کمرکلایی">
 </div>
 
 </section>
-  <section class="card" id="gallery">
+<section class="card" id="gallery">
 
 <h2>📸 گالری تصاویر روستای کمرکلا</h2>
 
@@ -439,7 +520,7 @@ href="https://maps.google.com/?q=5F76+W6R+Kamar+Kola+Mazandaran"
 target="_blank"
 class="map-btn">
 
-مشاهده در گوگل مپ
+📍 مشاهده در گوگل مپ
 
 </a>
 
@@ -450,7 +531,7 @@ class="map-btn">
 <h2>📞 تماس با ما</h2>
 
 <p>
-شماره تماس:
+شماره تماس روستا:
 <br>
 <strong>09119143106</strong>
 </p>
@@ -490,4 +571,3 @@ class="instagram-btn">
 
 </body>
 </html>
-<body>
